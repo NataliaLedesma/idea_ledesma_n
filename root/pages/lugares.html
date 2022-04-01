@@ -10,6 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 <body>
@@ -17,14 +22,14 @@
 
         <a href="../index.html"><img src="../img/iconos/home.png" alt="icono de home" class="iconoHome"> </a>
 
-        <h1>Brunch & Co.</h1>
+        <h1 class="animate__animated animate__bounce">Brunch & Co.</h1>
 
 
         <nav class="header_nav">
             <ul class="lista">
                 <li><a href="./nosotros.html">Quiénes somos</a></li>
                 <li><a href="./lugares.html">Lugares</a>
-                    <ul>
+                    <ul class="submenu animate__animated animate__flipInX">
                         <li> <a href="./zonanorte.html">Zona Norte</a></li>
                         <li><a href="./zonasur.html">Zona Sur</a></li>
                         <li><a href=".zonaoeste.html">Zona Oeste</a></li>
@@ -40,7 +45,7 @@
     <main class="main__lugares">
         <h3 class="section__nosotros--titulo">LUGARES</h3>
         <div class="lugares">
-            <div class="lugares__container">
+            <div class="lugares__container"data-aos="zoom-in">
                 <div class="lugares__container--imagen">
                     <img src="../img/zonanorte.jpg" alt="Zona norte">
                 </div>
@@ -48,7 +53,7 @@
                     <a href="./zonanorte.html">ZONA NORTE</a>
                 </div>
             </div>
-            <div class="lugares__container1">
+            <div class="lugares__container1"data-aos="zoom-in">
                 <div class="lugares__container--imagen">
                     <img src="../img/zonasur.jpg" alt="Zona norte">
                 </div>
@@ -56,7 +61,7 @@
                     <a href="./zonasur.html">ZONA SUR</a>
                 </div>
             </div>
-            <div class="lugares__container2">
+            <div class="lugares__container2"data-aos="zoom-in">
                 <div class="lugares__container--imagen">
                     <img src="../img/zonaoeste.jpg" alt="Zona norte">
                 </div>
@@ -64,14 +69,14 @@
                     <a href="./zonaoeste.html">ZONA OESTE</a>
                 </div>
             </div>
-            <div class="lugares__container3">
+            <div class="lugares__container3"data-aos="zoom-in">
                 <div class="lugares__container--imagen">
                     <img src="../img/caba.jpg" alt="Zona norte">
                 </div>
                 <div class="lugares__container--texto">
                     <a href="./zonacaba.html">CABA</a>
                 </div>
-            </div>s
+            </div>
         </div>
 
 
@@ -111,4 +116,8 @@
         </footer>
     
 </body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
 </html>

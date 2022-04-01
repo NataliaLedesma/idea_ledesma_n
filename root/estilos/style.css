@@ -26,7 +26,15 @@ h1{
     margin: 25px 0 0 10px;
     grid-area: iconoHome;
     width: 50px;
+    transition: all 1.1s;
 }
+.iconoHome:hover{
+    transform: scale(1.5);
+    -webkit-transform:  scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+}
+/* Barra de navegación*/
 
 .header_nav {
     grid-area: nav;
@@ -37,12 +45,9 @@ h1{
     color: #d68c45;
 }
 header nav ul li a:hover {
-    background-color: #ffc9b9;
     text-decoration: underline;
 }
 
-
-/* Barra de navegación*/
 ul {
     list-style: none;
     font-size:0 
@@ -232,7 +237,9 @@ footer {
     text-align: center;
     justify-items: center;
     padding: 25px;
+    border-radius: 20px;
 }
+
 .lugares__container{
     grid-area: lugaresContainer;
 }
@@ -249,12 +256,14 @@ footer {
     background-color: white;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 
 }
 .lugares__container--imagen img {
     width: 100%;
     height: 100%;
     opacity: 70%;
+    border-radius: 20px;
 }
 .lugares__container--texto {
     position: absolute;
@@ -440,54 +449,6 @@ footer {
     line-height:1.6;
 }
 
-.zonas__contenedor{
-    grid-area: zonasContenedor;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg zonasTexto zonasMapa";
-    height: 350px;
-}
-
-.zonas__contenedor1{
-    grid-area: zonasContenedor1;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg1 zonasTexto1 zonasMapa" ;
-    height: 350px;
-}
-
-.zonas__contenedor2{
-    grid-area: zonasContenedor2;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg2 zonasTexto2 zonasMapa";
-    height: 350px;
-}
-
-.zonas__contenedor3{
-    grid-area: zonasContenedor3;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg3 zonasTexto3 zonasMapa";
-    height: 350px;
-}
-
-.zonas__gridContainer{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-    "zonasContenedor"
-    "zonasContenedor1"
-    "zonasContenedor2"
-    "zonasContenedor3";
-}
-
-
-
 /*grid */
 
 .grid__container--header {
@@ -564,12 +525,51 @@ footer{
 }
 
 /*grid de lugares por zonas*/
+.zonas__contenedor{
+    grid-area: zonasContenedor;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "zonasCImg zonasTexto zonasMapa";
+    height: 350px;
+}
 
+.zonas__contenedor1{
+    grid-area: zonasContenedor1;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "zonasCImg1 zonasTexto1 zonasMapa" ;
+    height: 350px;
+}
 
+.zonas__contenedor2{
+    grid-area: zonasContenedor2;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "zonasCImg2 zonasTexto2 zonasMapa";
+    height: 350px;
+}
 
+.zonas__contenedor3{
+    grid-area: zonasContenedor3;
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr 0.5fr;
+    grid-template-areas: 
+    "zonasCImg3 zonasTexto3 zonasMapa";
+    height: 350px;
+}
 
-
-
+.zonas__gridContainer{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "zonasContenedor"
+    "zonasContenedor1"
+    "zonasContenedor2"
+    "zonasContenedor3";
+}
 
 
 @media (max-width: 450px){
@@ -707,4 +707,21 @@ footer{
         font-size: 24px;
     }
 }
+/*ANIMACIONES*/
+#redes a:hover{
+    transform: scale(1.2);
+    transition: all 0.7s;
+}
 
+#legales div a:hover{
+    font-size: 17px;
+    font-weight: bolder;
+    letter-spacing: 0.2em;
+    transition: all 1s;
+}
+
+.lista li:hover{
+    background-color:#ffc9b9;
+    font-weight: bold;
+    transition: all 0.5s;
+}
