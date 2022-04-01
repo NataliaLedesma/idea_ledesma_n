@@ -46,70 +46,70 @@ header nav ul li a:hover {
 ul {
     list-style: none;
     font-size:0 
- }
- li {
+}
+li {
     display: inline-block;
     width: 15%;
     position: relative;
     font-size: 14px;
- }
- ul ul {
+}
+ul ul {
     position: absolute;
     display: none;
- }
- ul ul li {
+}
+ul ul li {
     display: block;
     width: 100%;
     color: #d68c45;
- }
- ul li:hover ul {
+}
+ul li:hover ul {
     display:block;
- }
- 
- nav ul li {
-     border: double;
-     border-color: #2C6E49 ;
-     padding: 0.6em;
-     border-radius: 0.6em;
-     background-color: #fefee3;
-     margin: 16px 16px;
-     text-align: center;
-     font-size: large;
-     font-weight: bold;
- }
- .lista {
-     display: flex;
-     justify-content: center;
- }
-
- /*body*/
-body {
-    background-color: #ffc9b9;
-    font-family: 'Carrois Gothic SC', sans-serif;
-    color: #2c6e49;
 }
 
- /*main index*/
+nav ul li {
+    border: double;
+    border-color: #2C6E49 ;
+    padding: 0.6em;
+    border-radius: 0.6em;
+    background-color: #fefee3;
+    margin: 16px 16px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.lista {
+    display: flex;
+    justify-content: center;
+}
 
- main{
+/*body*/
+body {
+    background-color: #ffc9b9 !important;
+    font-family: 'Carrois Gothic SC', sans-serif !important;
+    color: #2c6e49 !important;
+}
+
+/*main index*/
+
+main{
     grid-area: main;
- }
- #texto__bienvenida {
-     font-weight: bold;
-     font-size: 24px;
-     color: #2c6e49;
-     margin: 10px;
-     grid-area: textoMain;
- }
- #banner {
-     width: 100%;
-     height: 400px;
-     grid-area: bannerMain;
- }
-#banner__img {
-    width: 100%;
-    height: 400px;
-    display: block;
+}
+.main__index{
+    height: fit-content;
+}
+.indexH2{
+    height: fit-content;
+}
+.carouselMain{
+    grid-area: carouselMain;
+}
+
+#texto__bienvenida {
+    font-weight: bold;
+    font-size: 24px;
+    color: #2c6e49;
+    margin: 10px;
+    grid-area: textoMain;
 }
 
 /*section index*/
@@ -502,11 +502,11 @@ footer {
 
 .main__index{
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas:
     "textoMain"
-    "bannerMain"
-    "bannerMain";
+    "carouselMain"
+    "carouselMain";
 }
 
 .section__index{
