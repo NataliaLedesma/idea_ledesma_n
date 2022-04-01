@@ -108,6 +108,11 @@ main{
 .carouselMain{
     grid-area: carouselMain;
 }
+.contenedor__imagen--carousel{
+    height: 400px;
+    font-weight: bolder;
+    font-size: 3em;
+}
 
 #texto__bienvenida {
     font-weight: bold;
@@ -463,7 +468,7 @@ footer {
 
 .main__index{
     display: grid;
-    grid-template-rows: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 1fr;
     grid-template-areas:
     "textoMain"
     "carouselMain"
