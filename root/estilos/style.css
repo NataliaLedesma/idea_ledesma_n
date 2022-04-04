@@ -42,7 +42,7 @@ h1{
 
 .lista a {
     text-decoration: none;
-    color: #d68c45;
+    color: #d68c45 !important;
 }
 header nav ul li a:hover {
     text-decoration: underline;
@@ -61,6 +61,7 @@ li {
 ul ul {
     position: absolute;
     display: none;
+    z-index: 1;
 }
 ul ul li {
     display: block;
@@ -89,9 +90,12 @@ nav ul li {
 
 /*body*/
 body {
-    background-color: #ffc9b9 !important;
+    background-color: #fefee3 !important;
     font-family: 'Carrois Gothic SC', sans-serif !important;
     color: #2c6e49 !important;
+}
+.marginBody{
+    margin: 0 12rem;
 }
 
 /*main index*/
@@ -118,14 +122,16 @@ main{
     font-weight: bold;
     font-size: 24px;
     color: #2c6e49;
-    margin: 10px;
+    margin: 10px 200px;
     grid-area: textoMain;
+
 }
 
 /*section index*/
 
 .section__index{
     grid-area: section;
+    margin: 0 200px;
 }
 
 .image__container {
@@ -204,12 +210,14 @@ footer {
     font-size: 40px;
     grid-area: nosotrosTitulo;
     padding: 25px;
+    margin-left: 200px;
 }
 
 .section__valores--titulo{
     font-size: 40px;
     grid-area: valoresTitulo;
     padding: 25px;
+    margin-left: 200px;
 }
 
 .text__container--nosotros p{
@@ -221,6 +229,7 @@ footer {
     width: 600px;
     height: 500px;
     grid-area: imgContainerNosotros;
+    margin-left: 200px;
 }
 .image__container--nosotros img{
     width: 90%;
@@ -308,7 +317,6 @@ footer {
     margin: 25px 25px 25px 25px;
     line-height:1.6;
     grid-area: divRecomendadosTexto;
-
 }
 
 /*Page COMUNIDAD */
@@ -321,23 +329,24 @@ footer {
 .background__container {
     width: 100%;
     height: 100%;
-    background-color: #ffc9b9;
-    opacity: 80%;
+    background-color: #ffc9b9CC;
 }
 
 .background__container h2 {
     font-size: 40px;
     padding: 25px;
+    margin: 0 200px;
 }
 .background__container p {
     padding: 25px;
     font-size: 30px;
+    margin: 0 200px;
 }
 
 .ingresar {
     width: 400px;
     height: 300px;
-    background-color: white;
+    background-color: #FFFFFf99;
     margin: auto;
     padding: 20px 20px;
     border: 1px solid;
@@ -416,42 +425,22 @@ footer {
 }
 .div__zonas--texto{
     grid-area: zonasTexto;
-}
-.div__zonas--texto1{
-    grid-area: zonasTexto1;
-}
-.div__zonas--texto1{
-    grid-area: zonasTexto1;
-}
-.div__zonas--texto2{
-    grid-area: zonasTexto2;
-}
-.div__zonas--texto3{
-    grid-area: zonasTexto3;
+    text-decoration: none;
 }
 
-.div__zonas--texto a:hover {
-    background-color: #4c956c;
-    color: #ffc9b9;
-}
-.div__zonas--texto1 a:hover {
-    background-color: #4c956c;
-    color: #ffc9b9;
-}
-.div__zonas--texto2 a:hover {
-    background-color: #4c956c;
-    color: #ffc9b9;
-}
-.div__zonas--texto3 a:hover {
-    background-color: #4c956c;
-    color: #ffc9b9;
-}
 
 .div__zonas--texto, .div__zonas--texto1, .div__zonas--texto2, .div__zonas--texto3{
     width:100%;
     height:auto;
     margin: 25px 25px 25px 25px;
     line-height:1.6;
+}
+.zonas__main{
+    margin-left: 200px;
+}
+.section__lugares--titulo{
+    font-size: 40px;
+    margin: 10px;
 }
 
 /*grid */
@@ -518,7 +507,7 @@ footer{
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "divRecomendadosTexto divRecomendadosGaleria ";
-    margin-left: 10px;
+    margin-left: 200px;
 }
 
 /*grid lugares*/
@@ -535,34 +524,7 @@ footer{
     display: grid;
     grid-template-columns: 0.5fr 1.5fr 0.5fr;
     grid-template-areas: 
-    "zonasCImg zonasTexto zonasMapa";
-    height: 350px;
-}
-
-.zonas__contenedor1{
-    grid-area: zonasContenedor1;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg1 zonasTexto1 zonasMapa" ;
-    height: 350px;
-}
-
-.zonas__contenedor2{
-    grid-area: zonasContenedor2;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg2 zonasTexto2 zonasMapa";
-    height: 350px;
-}
-
-.zonas__contenedor3{
-    grid-area: zonasContenedor3;
-    display: grid;
-    grid-template-columns: 0.5fr 1.5fr 0.5fr;
-    grid-template-areas: 
-    "zonasCImg3 zonasTexto3 zonasMapa";
+    "zonasCImg divRecomendadosTexto zonasMapa";
     height: 350px;
 }
 
