@@ -1,0 +1,29 @@
+footer {
+    color: map-get($colores, crema);
+    @include colores-navfooter;
+    padding: 1rem 3rem;
+
+    .links-footer {
+        color: map-get($colores, crema);
+        text-decoration: none;
+
+        &:hover {
+            background-color: map-get($colores , rosa );
+            text-decoration: underline;
+            color: map-get($colores, crema );
+        }
+    }
+    #redes {
+        display: flex;
+        padding-top: 10px;
+        margin-left: 10px;
+        grid-area: footerRedes;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        .redes-sociales{
+            width: 100%;
+            text-align: end;
+        }
+    }
+}
